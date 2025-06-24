@@ -84,7 +84,7 @@
                          <!-- este es de prueba -->
                           <form method="get" action="https://www.google.com/">
                            <label for="nombre">nombre</label>
-                           <input type="text" id="nombre" placeholder="ingrese su nombre" required>
+                           <input type="text" id="nombre" placeholder="ingrese su nombre" required pattern="[A-Za-z0-9]{5,7}">
                            <br><br>
                            <label for="edad">edad</label>
                            <input type="number" id="edad" placeholder="ingrese su edad" min="18" required>
@@ -132,7 +132,7 @@
                            <h3>1.informacion basica</h3>
                            <form style="border-collapse: collapse;margin: 0;padding: 0;" valing="top" >
                            <label for="name">primer nombre</label><br>
-                           <input type="text" id="name" placeholder="ingrese su primer nombre" required pattern="[A-Za-Z0-9]{3,10}">
+                           <input type="text" id="name" placeholder="ingrese su primer nombre" required>
                            <br><br>
                            <label for="name">apellido</label><br>
                            <input type="text" id="name" placeholder="ingrese su apellido" required>
