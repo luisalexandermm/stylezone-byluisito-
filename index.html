@@ -115,24 +115,24 @@
                            <br> <br>
                            <label for="ciudad">escoge tu ciudad</label>
                             <input list="ciudades"id="ciudad" name="ciudad" placeholder="Seleccione una ciudad">
-                            <datalist id="ciudades">
+                          <datalist id="ciudades">
                               <option value="quibdo"></option>
                               <option value="medellin"></option>
                               <option value="cali"></option>
                               <option value="ibague"></option>
                               <option value="cartagena"></option>
                               <option value="santa marta"></option>
-                            </datalist>
-                           <br><br>
-                           <input type="submit" value="enviar" style="background-color: darkgreen;" required>
-                           <br><br>
-                            </form>  
+                          </datalist>
+                         <br><br>
+                         <input type="submit" value="enviar" style="background-color: darkgreen;" required>
+                         <br><br>
+                         </form>  
                             <!-- hasta aqui llega de prueba -->         
                            <hr>
                            <h3>1.informacion basica</h3>
                            <form style="border-collapse: collapse;margin: 0;padding: 0;" valing="top" >
                            <label for="name">primer nombre</label><br>
-                           <input type="text" id="name" placeholder="ingrese su primer nombre" required>
+                           <input type="text" id="name" placeholder="ingrese su primer nombre" required pattern="[A-Za-Z0-9]{3,10}">
                            <br><br>
                            <label for="name">apellido</label><br>
                            <input type="text" id="name" placeholder="ingrese su apellido" required>
