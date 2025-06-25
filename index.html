@@ -185,6 +185,7 @@
                            <br><br>
                            <input type="reset" value="limpiar" style="background-color: rgb(148, 223, 51);" required>
                            </form>
+
                           <!-- ejercicio de prueba -->
                              <form>
                                <label for="usuario">nombre del usuario</label><br>
@@ -216,7 +217,40 @@
                                 font-weight: bold;
                                 font-family: fantasy;
                                 }
-                              </style>               
+                              </style>     
+                                        <form>
+                                       <fieldset>
+                                         <legend>Informacion personal</legend>
+                                         <label for="nombre">Nombre:</label>
+                                         <input type="text" id="nombre" name="nombre">
+                                         <br><br>
+                                         <label for="correo">Correo Electronico</label>
+                                         <input type="email" id="correo" name="correo">
+                                       </fieldset>
+
+                                      <fieldset>
+                                       <legend>Datos de Acceso</legend>
+                                       <label for="usuario">Usuario:</label>
+                                       <input type="text" id="usuario" name="usuario">
+                                       <br><br>
+                                       <label for="contraseña">Contraseña</label>
+                                       <input type="password" id="contraseña" name="contraseña">
+                                     </fieldset>
+                                      </form>
+
+                                         <style>
+                                         fieldset {
+                                         border:2px solid#007bff;
+                                         border-radius:8px;
+                                         padding:10px;
+                                         margin-bottom:10px;
+                                         }
+
+                                         legend{
+                                         font-weight: bold;
+                                         color:#007bff;
+                                          }
+                                         </style>
     </body> 
 </html>  
         </body>    
