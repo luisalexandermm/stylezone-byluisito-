@@ -6,11 +6,19 @@
         <title> luisito style zone </title>
     </head>
     <body>
-       <img src="img/Logo tienda de videojuegos moderno ilustrado negro.png" alt="logo de la tienda" width="200"><h1> bienvenido a luisito style zone🎮</h1> 
+       <img src="img/Logo tienda de videojuegos moderno ilustrado negro.png" alt="logo de la tienda" width="50"> <hr>
+       <h1 style="color: rgb(238, 229, 218);"> <span class="resaltado" >bienvenido a luisito style zone🎮</span></h1> 
         <body>
-            <p> <em>tu tienda multiple en  <u> acessorios </u> <u>tecnologicos y videojuegos  </u> de <strong> confianza</strong></em>.<br> donde encontraras muchos de tus accesorios y videojuegos que deseas.<br></p>
             <hr>
-            <h1>galeria de imagenes</h1>
+            <details style="background-color: rgb(241, 225, 150);
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 8px;">
+                              <summary><strong> galeria de imagenes</strong></summary>
+            <h1 style="color: rgb(43, 24, 3);
+             padding: 10px;
+             border-radius: 20px;
+             box-shadow:  0 4px 8px; color: rgb(245, 226, 205);">galeria de imagenes</h1>
             <!-- estos son de accesorios para escritorios y moviles  -->
             <h3> teclados</h3><img src="img/imagennn.jpg" alt="teclado gammer" width="300" height="200" title="teclado gamer" loading="lazy"> <br> 
             <h3>audifonos</h3> <img src="img/diaema.jfif" alt="diaema gamer1" width="300" height="200" title="diaema gamer1" loading="lazy"> <br>
@@ -25,12 +33,13 @@
             <h3>discos duros </h3><img src="img/discoduro.png"  alt="disco duro" width="300" height="300"  title="disco duro" loading="lazy"><br>
             <h3>cargadores inhalambricos moviles</h3> <img src="https://i.blogs.es/663ac6/base-anker/450_1000.jpg" alt="cargadores inhalambricos" width="300" height="200" title="inhalambricos" loading="lazy"><br>
             <h3>cargadores moviles </h3> <img src="https://andinotec.com/wp-content/uploads/2021/01/11481.jpg" alt="cargadores moviles" width="300" height="200" title="cargadores" loading="lazy"><br>
-           <br>            
-                <section>
-                         <a href="#file:///C:/Users/estudiante.quibdo/Desktop/luisito/index.html">ir a mas opciones de compra</a><br>
-                         <li> </li>
-                         </section>
-                        </main>
+           <br>   
+        </details>         
+             <details style="background-color: rgb(240, 234, 209);
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 8px;">
+                              <summary><strong> tabla de productos </strong></summary>
                         <br> <hr>      
              <table border="1" style="border-collapse: collapse;margin: 0;padding: 0;" valing="top">
                          <thead>
@@ -81,9 +90,10 @@
                          </table>
                          <br>
                          <hr>
-                          <form  method="get" action="https://www.google.com/">
+                         <!-- este es de prueba -->
+                          <form method="get" action="https://www.google.com/">
                            <label for="nombre">nombre</label>
-                           <input type="text" id="nombre" placeholder="ingrese su nombre" required>
+                           <input type="text" id="nombre" placeholder="ingrese su nombre" required pattern="[A-Za-z0-9]{5,7}">
                            <br><br>
                            <label for="edad">edad</label>
                            <input type="number" id="edad" placeholder="ingrese su edad" min="18" required>
@@ -114,21 +124,27 @@
                            <br> <br>
                            <label for="ciudad">escoge tu ciudad</label>
                             <input list="ciudades"id="ciudad" name="ciudad" placeholder="Seleccione una ciudad">
-                            <datalist id="ciudades">
+                          <datalist id="ciudades">
                               <option value="quibdo"></option>
                               <option value="medellin"></option>
                               <option value="cali"></option>
                               <option value="ibague"></option>
                               <option value="cartagena"></option>
                               <option value="santa marta"></option>
-                            </datalist>
-                           <br><br>
-                           <input type="submit" value="enviar" style="background-color: darkgreen;" required>
-                           <br><br>
-                            </form>           
+                          </datalist>
+                         <br><br>
+                         <input type="submit" value="enviar" style="background-color: darkgreen;" required>
+                         <br><br>
+                           <!-- hasta aqui llega de prueba -->   
+                        </details> 
+                                <details style ="background-color: rgb(248, 248, 245);
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 8px;">
+                              <summary><strong>informacion del cliente</strong></summary>
                            <hr>
                            <h3>1.informacion basica</h3>
-                           <form style="border-collapse: collapse;margin: 0;padding: 0;" valing="top" style="border-radius:none;" style="background-color: antiquewhite;" >
+                           <form style="border:none;" style="border-collapse: collapse;margin: 0;padding: 0;" valing="top" style="background-color: bisque;">
                            <label for="name">primer nombre</label><br>
                            <input type="text" id="name" placeholder="ingrese su primer nombre" required>
                            <br><br>
@@ -169,7 +185,41 @@
                            <br><br>
                            <input type="reset" value="limpiar" style="background-color: rgb(148, 223, 51);" required>
                            </form>
-                          <form action=""></form>
+                                </details>
+                          <!-- ejercicio de prueba -->
+                             <form>
+                               <label for="usuario">nombre del usuario</label><br>
+                               <input type="text" id="usuario" placeholder="ingrese su nombre de usuario" required pattern="[A-Za-z0-9]{3,7}" title="debe tener entre 3-7 caracteres"><br><br>
+                               <label for="edad">edad:</label><br>
+                               <input type="number"id="edad" placeholder="ingrese su edad" min="18" required><br><br>
+                               <button type="submit">enviar</button>
+                             </form> <br>    
+                             <!-- cierre ejercicio -->                     
+                              <details style="background-color: rgb(241, 225, 150);
+                              padding: 20px;
+                              border-radius: 10px;
+                              box-shadow: 0 4px 8px;">
+                              <summary><strong>preguntas frecuentes</strong></summary>
+                            <p><h4>que tal la calidad de su producto?</h4></p>
+                              </details>  
+                              <p>su pedido tiene 5 dias para ser reembolzable <span class="importante"> importante</span> </p> 
+                              <style>
+                                .importante {
+                                  color: rgb(231, 186, 60);
+                                  font-weight: bold;
+                                  font-family: 'Times New Roman', Times, serif;
+                                }
+                              </style>
+                              <p><span class="resaltado"> este es un mensaje importante</span> </p>
+                              <style>
+                                .resaltado {
+                                color: rgb(231, 186, 60);
+                                font-weight: bold;
+                                font-family: fantasy;
+                                }
+                              </style>
+                              <h1> </h1>
+                        <hr>
     </body> 
 </html>  
         </body>    
