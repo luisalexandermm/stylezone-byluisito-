@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luisito Style Zone</title>
   <link rel="icon" type="image/png" href="img/logo.png.png">
+  <link rel="stylesheet" href="style.css"> <!-- Link a CSS externo -->
+
   <style>
+    /* Puedes mover esto a style.css si prefieres */
     .importante {
       color: rgb(8, 5, 136);
       font-weight: bold;
@@ -16,141 +19,163 @@
       font-weight: bold;
       font-family: fantasy;
     }
+    footer {
+      text-align: center;
+      background-color: rgb(220, 220, 250);
+      padding: 20px;
+      border-top: 3px solid #000;
+      margin-top: 40px;
+      border-radius: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <img src="img/logo.png.png" alt="Logo de la tienda" width="150">
+  <header>
+    <img src="img/logo.png.png" alt="Logo de la tienda" width="150">
+    <h1 class="resaltado">Bienvenido a Luisito Style Zone 🎮</h1>
+  </header>
+
+  <nav>
+    <hr>
+    <ul>
+      <li><a href="#galeria">Galería de imágenes</a></li>
+      <li><a href="#productos">Tabla de productos</a></li>
+      <li><a href="#contacto">Formulario de contacto</a></li>
+      <li><a href="#faq">Preguntas frecuentes</a></li>
+    </ul>
+    <hr>
+  </nav>
+
+  <main>
+
+    <section id="galeria">
+      <article style="background-color: rgb(202, 238, 245); padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px;">
+        <h2>Galería de imágenes</h2>
+        <h3>Teclados</h3>
+        <img src="img/imagennn.jpg" alt="Teclado gamer" width="300" height="200" style="padding: 10px; border-radius: 20px;"><br>
+        <h3>Audífonos</h3>
+        <img src="img/diaemas.png" alt="Diadema gamer" width="300" height="300" style="padding: 20px; border-radius: 30px;"><br>
+        <h3>Mouse</h3>
+        <img src="img/mouse.jfif" alt="Mouse gamer" width="300" height="200"><br>
+        <h3>Sillas</h3>
+        <img src="img/silla.jfif" alt="Silla gamer" width="300" height="200"><br>
+        <h3>Padmouse</h3>
+        <img src="img/padmouse.png" alt="Padmouse" width="300" height="200"><br>
+        <h3>Monitores</h3>
+        <img src="img/monitor.png" alt="Monitor" width="300" height="200"><br>
+        <h3>CPU</h3>
+        <img src="img/cpu.png" alt="CPU" width="300" height="200"><br>
+        <h3>Relojes inteligentes</h3>
+        <img src="img/reloj inteligente.png" alt="Reloj inteligente" width="300" height="200"><br>
+        <h3>Celulares</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMmswEBspII8Pv07-8Ps41aDY6nny-4UDNbg&s" alt="Celulares" width="300" height="200"><br>
+        <h3>Fundas</h3>
+        <img src="img/fundas.png" alt="Fundas" width="300" height="200"><br>
+      </article>
+    </section>
+
+    <section id="productos">
+      <article style="background-color: #4444aa; color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
+        <h2>Tabla de productos</h2>
+        <table border="1" style="background-color: rgb(235, 235, 235); padding: 20px; border-radius: 20px; width: 100%;">
+          <thead>
+            <tr>
+              <th>Producto / Cantidad</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Colores disponibles</th>
+              <th>Comentarios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Celular</td>
+              <td>3</td>
+              <td>$5.445.232</td>
+              <td>Negro</td>
+              <td rowspan="4">¿He cumplido el reto a la perfección?</td>
+            </tr>
+            <tr>
+              <td>Computador</td>
+              <td>2</td>
+              <td>$2.500.232</td>
+              <td>Negro</td>
+            </tr>
+            <tr>
+              <td>Mouse gamer inalámbrico</td>
+              <td style="background-color: rgba(152, 237, 243, 0.418); border-radius: 5px;">0</td>
+              <td>$150.000</td>
+              <td style="background-color: rgb(152, 237, 243); border-radius: 5px;">Agotados</td>
+            </tr>
+            <tr>
+              <td>Diademas gamer</td>
+              <td>2</td>
+              <td>$50.000</td>
+              <td>Blanco</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>7</td>
+              <td>$8.095.464</td>
+              <td colspan="2"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+    </section>
+
+    <section id="contacto">
+      <article style="background-color: #0066cc; color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
+        <h2>Formulario de contacto</h2>
+        <form style="background-color: white; padding: 20px; border-radius: 20px;" method="get" action="https://www.google.com/">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="edad">Edad:</label><br>
+          <input type="number" id="edad" name="edad" min="18" required><br><br>
+
+          <label for="correo">Correo:</label><br>
+          <input type="email" id="correo" name="correo" required><br><br>
+
+          <label for="pais">Seleccione su país:</label><br>
+          <select id="pais" name="pais" required>
+            <option value="">Seleccione</option>
+            <option value="colombia">Colombia</option>
+            <option value="brazil">Brasil</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="mexico">México</option>
+          </select><br><br>
+
+          <input type="checkbox" name="revisar" required> Acepto los términos<br><br>
+          <input type="submit" value="Enviar">
+        </form>
+      </article>
+    </section>
+
+    <section id="faq">
+      <aside style="background-color: #dddddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
+        <h2>Preguntas frecuentes</h2>
+        <p><strong>¿Qué tal la calidad de su producto?</strong></p>
+        <p>Nuestros productos cumplen con altos estándares de calidad.</p>
+      </aside>
+    </section>
+
+  </main>
+
   <hr>
-  <h1 class="resaltado">Bienvenido a Luisito Style Zone 🎮</h1>
-  <hr style=" color: black; padding: 10px; border-radius: 10px;">
-
-  <h2>Categorías</h2>
-  <ul>
-    <li><a href="#galeria">Galería de imágenes</a></li>
-    <li><a href="#productos">Tabla de productos</a></li>
-    <li><a href="#contacto">Formulario de contacto</a></li>
-    <li><a href="#faq">Preguntas frecuentes</a></li>
-  </ul>
- <hr style=" color: black; padding: 10px; border-radius: 10px;">
-  <details id="galeria" style="background-color:rgb(202, 238, 245); padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px;">
-    <summary><strong style="color: aliceblue;">Galería de imágenes</strong></summary>
-    <h2>Galería de imágenes</h2>
-    <h3 style="color: aliceblue;">Teclados</h3>
-    <img src="img/imagennn.jpg" alt="Teclado gamer" width="300" height="200" style="color: aliceblue; padding: 10px;border-radius: 20px;" style="background-color: aliceblue;"><br>
-    <h3>Audífonos</h3>
-    <img src="img/diaemas.png" alt="Diadema gamer" width="300" height="300" style="color: aliceblue; padding: 20px; border: radius 30px;" style="background-color: aliceblue;"><br>
-    <h3>Mouse</h3>
-    <img src="img/mouse.jfif" alt="Mouse gamer" width="300" height="200"><br>
-    <h3>Sillas</h3>
-    <img src="img/silla.jfif" alt="Silla gamer" width="300" height="200"><br>
-    <h3>Padmouse</h3>
-    <img src="img/padmouse.png" alt="Padmouse" width="300" height="200"><br>
-    <h3>Monitores</h3>
-    <img src="img/monitor.png" alt="Monitor" width="300" height="200"><br>
-    <h3>CPU</h3>
-    <img src="img/cpu.png" alt="CPU" width="300" height="200"><br>
-    <h3>Relojes inteligentes</h3>
-    <img src="img/reloj inteligente.png" alt="Reloj inteligente" width="300" height="200"><br>
-    <h3>Celulares</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMmswEBspII8Pv07-8Ps41aDY6nny-4UDNbg&s" alt="Celulares" width="300" height="200"><br>
-    <h3>Fundas</h3>
-    <img src="img/fundas.png" alt="Fundas" width="300" height="200"><br>
-  </details>
-
-  <details id="productos" style="background-color: rgb(27, 29, 163); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
-    <summary><strong style="color: hsl(0, 0%, 100%);">Tabla de productos</strong></summary>
-    <table border="1" style=" background-color: rgb(235, 235, 235); padding: 20px; border-radius: 20px;">
-      <thead>
-        <tr>
-          <th>Producto / Cantidad</th>
-          <th>Cantidad</th>
-          <th>Precio</th>
-          <th>Colores disponibles</th>
-          <th>Comentarios</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Celular</td>
-          <td>3</td>
-          <td>$5.445.232</td>
-          <td>Negro</td>
-          <td rowspan="4">¿He cumplido el reto a la perfección?</td>
-        </tr>
-        <tr>
-          <td>Computador</td>
-          <td>2</td>
-          <td>$2.500.232</td>
-          <td>Negro</td>
-        </tr>
-        <tr>
-          <td>Mouse gamer inalámbrico</td>
-          <td style="background-color: rgba(152, 237, 243, 0.418); padding: 5px; border-radius: 5px;">0</td>
-          <td>$150.000</td>
-          <td style="background-color: rgb(152, 237, 243); padding: 5px; border-radius: 5px;" >Agotados</td>
-        </tr>
-        <tr>
-          <td>Diademas gamer</td>
-          <td>2</td>
-          <td>$50.000</td>
-          <td>Blanco</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>7</td>
-          <td>$8.095.464</td>
-          <td colspan="2"></td>
-        </tr>
-      </tfoot>
-    </table>
-  </details>
-
-  <details id="contacto" style=" background-color: blue; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
-    <summary><strong style="color: aliceblue;">Formulario de contacto</strong></summary>
-    <form  style="background-color: rgb(255, 255, 255); padding: 20px; border-radius: 20px;" method="get" action="https://www.google.com/">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br><br>
-
-      <label for="edad">Edad:</label><br>
-      <input type="number" id="edad" name="edad" min="18" required><br><br>
-
-      <label for="correo">Correo:</label><br>
-      <input type="email" id="correo" name="correo" required><br><br>
-
-      <label for="pais">Seleccione su país:</label><br>
-      <select id="pais" name="pais" required>
-        <option value="">Seleccione</option>
-        <option value="colombia">Colombia</option>
-        <option value="brazil">Brasil</option>
-        <option value="argentina">Argentina</option>
-        <option value="chile">Chile</option>
-        <option value="mexico">México</option>
-      </select><br><br>
-
-      <input type="checkbox" name="revisar" required> Acepto los términos<br><br>
-      <input type="submit" value="Enviar">
-    </form>
-  </details>
-
-  <details id="faq" style="background-color: rgb(235, 235, 235); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px;">
-    <summary><strong>Preguntas frecuentes</strong></summary>
-    <p><strong>¿Qué tal la calidad de su producto?</strong></p>
-    <p>Nuestros productos cumplen con altos estándares de calidad.</p>
-  </details>
-
   <p>Su pedido tiene 5 días para ser reembolsable <span class="importante">IMPORTANTE</span>.</p>
   <p><span class="resaltado">Este es un mensaje importante</span></p>
-  <hr style="color: rgb(37, 34, 231);
-   padding: 10px;
-   border-radius: 20px;">
-   <div><strong style="text-align: center;"> <h1>🎮 stylezone
-    <br>
-           <h3>tienda de tecnologia </h3>
-              <h4> 2025 by Luisito</h4>
-   </h1></strong></div>
+
+  <footer>
+    <h1 style="background-color: aliceblue; padding: 10px; border-radius: 15px;"> &copy; StyleZone</h1>
+    <h3>Tienda de tecnología</h3>
+    <h4>2025 by Luisito</h4>
+  </footer>
 
 </body>
 </html>
+
