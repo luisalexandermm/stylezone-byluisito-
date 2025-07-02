@@ -1,8 +1,16 @@
 #contacto{
-         background-color: #0066cc;
-         color: white;
-         padding: 20px;
-         border-radius: 10px;
-         box-shadow: 0 4px 8px;
-         font-size: 10px;
+     background-color: #0066cc;
+     color: white;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px;
+     font-size: 10px;
+}
+#nombre{
+     background-color: white;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px;
+     font-size: 10px;
+      
 }
