@@ -13,7 +13,7 @@ body {
 
 .resaltado {
   color: rgb(2, 12, 97);
-  font-weight: bold;
+  font-weight: 900;
   font-family: fantasy;
   animation: aparecer 2s ease;
 }
