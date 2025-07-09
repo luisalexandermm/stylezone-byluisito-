@@ -12,14 +12,20 @@ body {
 }
 h1,h2,h3
 .resaltado {
-  color: rgb(121, 130, 212);
+  color: rgb(10, 10, 10);
   font-weight: 900;
   font-family: fantasy;
   animation: aparecer 2s ease;
 }
 h1:hover{
-  color: aqua;
+  color: rgb(160, 27, 221);
   text-decoration: underline;
+}
+h3:hover{
+  color: cornflowerblue;
+  text-decoration: underline;
+  font-weight: bold;
+  
 }
 
 header, nav, section, footer, article, aside, table {
