@@ -17,6 +17,10 @@ h1,h2,h3
   font-family: fantasy;
   animation: aparecer 2s ease;
 }
+h1:hover{
+  color: aqua;
+  text-decoration: underline;
+}
 
 header, nav, section, footer, article, aside, table {
   animation: fadeInUp 1.2s ease both;
