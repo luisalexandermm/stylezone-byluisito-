@@ -19,16 +19,20 @@
 
   <nav class="main-nav">
     <ul>
-      <li><a href="#galeria"></a></li>
+      <li><a href="#galeria">Categorías</a></li>
       <li><a href="#productos">Productos</a></li>
+      <li><a href="#tabla">Tabla</a></li>
+      <li><a href="#servicios">Servicios</a></li>  
+      <li><a href="#testimonios">Testimonios</a></li>
       <li><a href="#contacto">Contacto</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
 
   <main>
+    <!-- GALERÍA -->
     <section id="galeria" class="section">
-      <h2 class="section-title">categoria</h2>
+      <h2 class="section-title">Categorías</h2>
       <div class="galeria-grid">
         <figure><img src="img/imagennn.jpg" alt="Teclado gamer"><figcaption>Teclado Gamer</figcaption></figure>
         <figure><img src="img/diaemas.png" alt="Diadema gamer"><figcaption>Audífonos</figcaption></figure>
@@ -43,7 +47,8 @@
       </div>
     </section>
 
-    <section id="productos" class="section">
+    <!-- PRODUCTOS DESTACADOS -->
+    <section id="productos" class="section productos">
       <h2 class="section-title">Teclados Destacados</h2>
       <div class="productos-grid">
         <div class="producto">
@@ -65,7 +70,8 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- TABLA DE PRODUCTOS -->
+    <section id="tabla" class="section">
       <h2 class="section-title">Tabla de Productos</h2>
       <div class="table-container">
         <table>
@@ -117,8 +123,50 @@
       </div>
     </section>
 
+    <!-- NUEVA SECCIÓN: SERVICIOS -->
+    <section id="servicios" class="section">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="servicios-grid">
+        <div class="servicio">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Envíos rápidos</h3>
+          <p>Entregamos a toda Colombia en menos de 72 horas.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-headset"></i>
+          <h3>Soporte 24/7</h3>
+          <p>Atención al cliente siempre disponible para ayudarte.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-lock"></i>
+          <h3>Pago Seguro</h3>
+          <p>Tus datos están protegidos con nosotros.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: TESTIMONIOS -->
+    <section id="testimonios" class="section">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <div class="testimonios-grid">
+        <div class="testimonio">
+          <p>"La atención y la calidad son insuperables. ¡Recomiendo totalmente!"</p>
+          <h4>- Camila R.</h4>
+        </div>
+        <div class="testimonio">
+          <p>"Los teclados RGB que compré llegaron en tiempo récord."</p>
+          <h4>- Juan P.</h4>
+        </div>
+        <div class="testimonio">
+          <p>"Muy satisfecho con mi compra. Excelente experiencia de principio a fin."</p>
+          <h4>- Esteban M.</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto" class="section">
-      <h2 class="section-title">Contacto</h2>
+      <h2 class="section-title">Formulario de Contacto</h2>
       <form method="get" action="https://www.google.com/">
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="number" name="edad" placeholder="Edad" min="18" required>
@@ -136,6 +184,7 @@
       </form>
     </section>
 
+    <!-- PREGUNTAS FRECUENTES -->
     <section id="faq" class="section">
       <h2 class="section-title">Preguntas Frecuentes</h2>
       <div class="faq">
@@ -144,6 +193,7 @@
       </div>
     </section>
 
+    <!-- AVISO -->
     <section class="section aviso">
       <p>Tu pedido tiene 5 días para ser <strong>reembolsable</strong>.</p>
       <p class="resaltado">¡Gracias por confiar en nosotros!</p>
@@ -152,7 +202,17 @@
 
   <footer>
     <p>&copy; 2025 Luisito Style Zone - Tienda de tecnología</p>
+    <div class="redes-sociales">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/573001112233" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
