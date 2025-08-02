@@ -322,6 +322,7 @@ form input[type="submit"]:hover {
   height: auto;
   transition: transform 0.3s;
   filter: grayscale(100%);
+  animation-direction: unset;
 }
 
 .clientes-logos img:hover {
