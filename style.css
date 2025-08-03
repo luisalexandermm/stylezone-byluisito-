@@ -28,12 +28,12 @@ h1, h2, h3,
 }
 
 h1:hover {
-  color: #7b2cbf;
+  color: #bbf3f0;
   text-decoration: underline;
 }
 
 h3:hover {
-  color: #3f37c9;
+  color: #92d6f1;
   text-decoration: underline;
   font-weight: bold;
 }

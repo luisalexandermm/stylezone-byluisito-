@@ -2,61 +2,125 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teclados</title>
-  <link rel="stylesheet" href="teclados.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teclados | Luisito Style Zone</title>
+  <link rel="stylesheet" href="teclados.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+  <script src="teclado.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Zona Gamer - Teclados</h1>
-    <nav>
-      <a href="#teclados">Inicio</a>
-      <a href="#inalambricos">Inalámbricos</a>
-      <a href="#cable">Con cable</a>
-      <a href="#gamers">Gamer</a>
-      <a href="#mecanicos">Mecánicos</a>
-      <a href="#retroiluminados">Retroiluminados</a>
+  <header class="hero">
+    <h1 class="title">Zona Gamer: Teclados</h1>
+    <p class="subtitle">Explora nuestros teclados mecánicos e inalámbricos de alto rendimiento</p>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="teclados.html" class="active">Teclados</a></li>
+        <li><a href="ratones.html">Ratones</a></li>
+        <li><a href="audifonos.html">Auriculares</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="teclados" class="gamer">
-    <h2>Bienvenido a la Zona de Teclados</h2>
-    <p>Descubre los mejores teclados del mercado, ideales para cualquier necesidad: oficina, gaming o uso profesional.</p>
+  <section class="section">
+    <h2 class="section-title">Ofertas Exclusivas</h2>
+    <div class="productos-grid">
+      <div class="card oferta animate-futuristic">
+        <img src="img/teclado1.jpg" alt="HyperX Alloy Origins">
+        <h3>HyperX Alloy Origins</h3>
+        <p class="detalle">Teclado mecánico RGB con switches HyperX</p>
+        <p><span class="precio-anterior">$450.000</span><span class="precio-descuento">$389.000</span></p>
+      </div>
+      <div class="card oferta animate-futuristic">
+        <img src="img/teclado2.jpg" alt="Redragon Kumara K552">
+        <h3>Redragon Kumara K552</h3>
+        <p class="detalle">Diseño compacto, switches rojos, retroiluminado</p>
+        <p><span class="precio-anterior">$220.000</span><span class="precio-descuento">$179.000</span></p>
+      </div>
+    </div>
   </section>
 
-  <section id="inalambricos">
-    <h2>Teclados Inalámbricos</h2>
-    <p>Comodidad sin cables. Conéctate vía Bluetooth o USB inalámbrico.</p>
-    <img src="img/inalambrico.png" alt="Teclado inalámbrico" width="250">
+  <section class="section">
+    <h2 class="section-title">Teclados Inalámbricos</h2>
+    <div class="productos-grid">
+      <div class="card animate-futuristic">
+        <img src="img/teclado3.jpg" alt="Logitech K380">
+        <h3>Logitech K380</h3>
+        <p class="detalle">Conexión Bluetooth, compacto y silencioso</p>
+        <p class="precio">$139.000</p>
+      </div>
+      <div class="card animate-futuristic">
+        <img src="img/teclado4.jpg" alt="Microsoft Designer Compact">
+        <h3>Microsoft Designer</h3>
+        <p class="detalle">Diseño ultradelgado, moderno y elegante</p>
+        <p class="precio">$259.000</p>
+      </div>
+    </div>
   </section>
 
-  <section id="cable">
-    <h2>Teclados con Cable</h2>
-    <p>Conexión directa, sin latencia. Ideal para trabajo y gaming competitivo.</p>
-    <img src="img/cable.png" alt="Teclado con cable" width="250">
+  <section class="section">
+    <h2 class="section-title">Teclados Mecánicos</h2>
+    <div class="productos-grid">
+      <div class="card animate-futuristic">
+        <img src="img/teclado5.jpg" alt="Razer BlackWidow V3">
+        <h3>Razer BlackWidow V3</h3>
+        <p class="detalle">Switches verdes Razer, retroiluminación RGB</p>
+        <p class="precio">$549.000</p>
+      </div>
+      <div class="card animate-futuristic">
+        <img src="img/teclado6.jpg" alt="Corsair K95 RGB Platinum">
+        <h3>Corsair K95 RGB</h3>
+        <p class="detalle">Teclado premium con macros y RGB avanzado</p>
+        <p class="precio">$699.000</p>
+      </div>
+    </div>
   </section>
 
-  <section id="gamers">
-    <h2>Teclados Gamer</h2>
-    <p>Estilo, luces RGB y rendimiento extremo para los jugadores más exigentes.</p>
-    <img src="img/gamer.png" alt="Teclado gamer" width="250">
-  </section>
-
-  <section id="mecanicos">
-    <h2>Teclados Mecánicos</h2>
-    <p>Durabilidad, precisión y respuesta táctil en cada pulsación.</p>
-    <img src="img/mecanico.png" alt="Teclado mecánico" width="250">
-  </section>
-
-  <section id="retroiluminados">
-    <h2>Teclados Retroiluminados</h2>
-    <p>Trabaja o juega en la oscuridad con estilo y visibilidad mejorada.</p>
-    <img src="img/retroiluminado.png" alt="Teclado retroiluminado" width="250">
+  <section class="section">
+    <h2 class="section-title">Precios y Comparativa</h2>
+    <div class="table-container animate-futuristic">
+      <table>
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Tipo</th>
+            <th>Retroiluminación</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HyperX Alloy Origins</td>
+            <td>Mecánico / Cable</td>
+            <td>RGB</td>
+            <td>$389.000</td>
+          </tr>
+          <tr>
+            <td>Logitech K380</td>
+            <td>Inalámbrico</td>
+            <td>No</td>
+            <td>$139.000</td>
+          </tr>
+          <tr>
+            <td>Redragon Kumara</td>
+            <td>Mecánico / Cable</td>
+            <td>Rojo</td>
+            <td>$179.000</td>
+          </tr>
+          <tr>
+            <td>Razer BlackWidow V3</td>
+            <td>Mecánico / Cable</td>
+            <td>RGB</td>
+            <td>$549.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Luisito Style Zone - Todos los derechos reservados.</p>
+    <p>&copy; 2025 Luisito Style Zone - Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
