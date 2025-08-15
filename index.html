@@ -2,142 +2,105 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luisito Style Zone</title>
-  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2e0bcb28d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header class="hero">
-    <img src="img/logo.png" alt="Logo de la tienda" class="logo">
-    <h1>Bienvenido a <span class="highlight">Luisito Style Zone 🎮</span></h1>
-    <p class="subheading">Tu zona de tecnología y estilo gamer</p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <img src="img/logo.png" alt="Logo Luisito Style Zone" class="logo" />
+      <nav class="nav">
+        <ul>
+          <li><a href="#galeria" class="active">Categorías</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#tabla">Tabla</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#galeria">Categorías</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#tabla">Tabla</a></li>
-      <li><a href="#servicios">Servicios</a></li>  
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </nav>
+  <!-- MAIN -->
+  <main class="container main-content">
 
-  <main>
-    <!-- GALERÍA -->
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Bienvenido a <span class="highlight">Luisito Style Zone 🎮</span></h1>
+      <p class="subheading">Tu zona de tecnología y estilo gamer</p>
+    </section>
+
+    <!-- CATEGORÍAS -->
     <section id="galeria" class="section">
       <h2 class="section-title">Categorías</h2>
       <div class="galeria-grid">
-        <a href="teclados.html">
-          <figure><img src="img/imagennn.jpg" alt="teclados"><figcaption>Teclado Gamer</figcaption></figure>
-        </a>
-        <a href="audifonos.html">
-          <figure><img src="img/diaemas.png" alt="Diadema gamer"><figcaption>Audífonos</figcaption></figure>
-        </a>
-        <a href="mouse.html">
-          <figure><img src="img/mouse.png" alt="Mouse gamer"><figcaption>Mouse Gamer</figcaption></figure>
-        </a>
-        <a href="sillas.html">
-          <figure><img src="img/silla.png" alt="Silla gamer"><figcaption>Silla Gamer</figcaption></figure>
-        </a>
-        <a href="padmouse.html">
-          <figure><img src="img/padmouse.png" alt="Padmouse"><figcaption>Padmouse</figcaption></figure>
-        </a>
-        <a href="monitores.html">
-          <figure><img src="img/monitor.png" alt="Monitor"><figcaption>Monitor</figcaption></figure>
-        </a>
-        <a href="cpu.html">
-          <figure><img src="img/cpu.png" alt="CPU"><figcaption>CPU Gamer</figcaption></figure>
-        </a>
-        <a href="smartwatch.html">
-          <figure><img src="img/reloj inteligente.png" alt="Reloj inteligente"><figcaption>Smartwatch</figcaption></figure>
-        </a>
-        <a href="celulares.html">
-          <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMmswEBspII8Pv07-8Ps41aDY6nny-4UDNbg&s" alt="Celulares"><figcaption>Celulares</figcaption></figure>
-        </a>
-        <a href="fundas.html">
-          <figure><img src="img/fundas.png" alt="Fundas"><figcaption>Fundas</figcaption></figure>
-        </a>
+        <a href="teclados.html"><figure><img src="img/imagennn.jpg" alt="Teclados" /><figcaption>Teclado Gamer</figcaption></figure></a>
+        <a href="audifonos.html"><figure><img src="img/diaemas.png" alt="Diadema gamer" /><figcaption>Audífonos</figcaption></figure></a>
+        <a href="mouse.html"><figure><img src="img/mouse.png" alt="Mouse gamer" /><figcaption>Mouse Gamer</figcaption></figure></a>
+        <a href="sillas.html"><figure><img src="img/silla.png" alt="Silla gamer" /><figcaption>Silla Gamer</figcaption></figure></a>
+        <a href="padmouse.html"><figure><img src="img/padmouse.png" alt="Padmouse" /><figcaption>Padmouse</figcaption></figure></a>
+        <a href="monitores.html"><figure><img src="img/monitor.png" alt="Monitor" /><figcaption>Monitor</figcaption></figure></a>
+        <a href="cpu.html"><figure><img src="img/cpu.png" alt="CPU" /><figcaption>CPU Gamer</figcaption></figure></a>
+        <a href="smartwatch.html"><figure><img src="img/reloj inteligente.png" alt="Reloj inteligente" /><figcaption>Smartwatch</figcaption></figure></a>
+        <a href="celulares.html"><figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMmswEBspII8Pv07-8Ps41aDY6nny-4UDNbg&s" alt="Celulares" /><figcaption>Celulares</figcaption></figure></a>
+        <a href="fundas.html"><figure><img src="img/fundas.png" alt="Fundas" /><figcaption>Fundas</figcaption></figure></a>
       </div>
     </section>
 
     <!-- PRODUCTOS DESTACADOS -->
-    <section id="productos" class="section productos">
-      <h2 class="section-title">Teclados Destacados</h2>
+    <section class="productos-destacados section">
+      <h2 class="section-title">Productos Destacados</h2>
       <div class="productos-grid">
-        <div class="producto">
-          <img src="img/imagennn.jpg" alt="Teclado Gamer">
-          <h3>GXT 865 Asta Mechanical</h3>
-        </div>
-        <div class="producto">
-          <img src="https://http2.mlstatic.com/D_Q_NP_626829-CBT83051080967_032025-O.webp" alt="Teclado blanco y negro">
-          <h3>Hot Swap RGB 63 Teclas</h3>
-        </div>
-        <div class="producto">
-          <img src="img/teclad0.png" alt="Teclado blanco">
-          <h3>T-Dagger TGK315W Bora RGB</h3>
-        </div>
-        <div class="producto">
-          <img src="https://jyrtechnology.com.co/wp-content/uploads/2023/07/TMJR-014-1.jpg" alt="Teclado negro">
-          <h3>Teclado Multimedia TMJR-014</h3>
-        </div>
+        <div class="producto"><img src="img/teclad2.png" alt="Teclado Mecánico RGB"><h3>Teclado Mecánico RGB</h3><p class="precio">$250.000 COP</p></div>
+        <div class="producto"><img src="img/mouse.png"alt="Mouse Gamer Pro"><h3>Mouse Gamer Pro</h3><p class="precio">$150.000 COP</p></div>
+        <div class="producto"><img src="img/diaemas.png" alt="Audífonos Inalámbricos"><h3>Audífonos Inalámbricos</h3><p class="precio">$180.000 COP</p></div>
       </div>
     </section>
 
-    <!-- TABLA DE PRODUCTOS -->
+    <!-- OFERTAS -->
+    <section class="ofertas section">
+      <h2 class="section-title">Ofertas y Descuentos</h2>
+      <div class="productos-grid">
+        <div class="producto oferta"><img src="https://jyrtechnology.com.co/wp-content/uploads/2023/07/TMJR-014-1.jpg" alt="Teclado Compacto"><h3>Teclado Compacto</h3><p class="precio-anterior">$200.000 COP</p><p class="precio-oferta">$150.000 COP</p></div>
+        <div class="producto oferta"><img src="img/gamer.png" alt="Audífonos Gamer"><h3>Audífonos Gamer</h3><p class="precio-anterior">$220.000 COP</p><p class="precio-oferta">$170.000 COP</p></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS PRINCIPALES -->
+    <section id="productos" class="section productos">
+      <h2 class="section-title">Teclados Destacados</h2>
+      <div class="productos-grid">
+        <div class="producto"><img src="img/imagennn.jpg" alt="Teclado Gamer" /><h3>GXT 865 Asta Mechanical</h3></div>
+        <div class="producto"><img src="https://http2.mlstatic.com/D_Q_NP_626829-CBT83051080967_032025-O.webp" alt="Teclado blanco y negro" /><h3>Hot Swap RGB 63 Teclas</h3></div>
+        <div class="producto"><img src="img/teclad0.png" alt="Teclado blanco" /><h3>T-Dagger TGK315W Bora RGB</h3></div>
+        <div class="producto"><img src="https://jyrtechnology.com.co/wp-content/uploads/2023/07/TMJR-014-1.jpg" alt="Teclado negro" /><h3>Teclado Multimedia TMJR-014</h3></div>
+      </div>
+    </section>
+
+    <!-- TABLA -->
     <section id="tabla" class="section">
       <h2 class="section-title">Tabla de Productos</h2>
       <div class="table-container">
         <table>
           <thead>
-            <tr>
-              <th>Producto</th>
-              <th>Cantidad</th>
-              <th>Precio</th>
-              <th>Color</th>
-              <th>Comentarios</th>
-            </tr>
+            <tr><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Color</th><th>Comentarios</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Celular</td>
-              <td>3</td>
-              <td>$5.445.232</td>
-              <td>Negro</td>
-              <td rowspan="4">¿He cumplido el reto a la perfección?</td>
-            </tr>
-            <tr>
-              <td>Computador</td>
-              <td>2</td>
-              <td>$2.500.232</td>
-              <td>Negro</td>
-            </tr>
-            <tr>
-              <td>Mouse inalámbrico</td>
-              <td>0</td>
-              <td>$150.000</td>
-              <td>Agotado</td>
-            </tr>
-            <tr>
-              <td>Diademas</td>
-              <td>2</td>
-              <td>$50.000</td>
-              <td>Blanco</td>
-            </tr>
+            <tr><td>Celular</td><td>3</td><td>$5.445.232</td><td>Negro</td><td rowspan="4">¿He cumplido el reto a la perfección?</td></tr>
+            <tr><td>Computador</td><td>2</td><td>$2.500.232</td><td>Negro</td></tr>
+            <tr><td>Mouse inalámbrico</td><td>0</td><td>$150.000</td><td>Agotado</td></tr>
+            <tr><td>Diademas</td><td>2</td><td>$50.000</td><td>Blanco</td></tr>
           </tbody>
           <tfoot>
-            <tr>
-              <td>Total</td>
-              <td>7</td>
-              <td>$8.095.464</td>
-              <td colspan="2"></td>
-            </tr>
+            <tr><td>Total</td><td>7</td><td>$8.095.464</td><td colspan="2"></td></tr>
           </tfoot>
         </table>
       </div>
@@ -147,21 +110,9 @@
     <section id="servicios" class="section">
       <h2 class="section-title">Nuestros Servicios</h2>
       <div class="servicios-grid">
-        <div class="servicio">
-          <i class="fas fa-shipping-fast"></i>
-          <h3>Envíos rápidos</h3>
-          <p>Entregamos a toda Colombia en menos de 72 horas.</p>
-        </div>
-        <div class="servicio">
-          <i class="fas fa-headset"></i>
-          <h3>Soporte 24/7</h3>
-          <p>Atención al cliente siempre disponible para ayudarte.</p>
-        </div>
-        <div class="servicio">
-          <i class="fas fa-lock"></i>
-          <h3>Pago Seguro</h3>
-          <p>Tus datos están protegidos con nosotros.</p>
-        </div>
+        <div class="servicio"><i class="fas fa-shipping-fast"></i><h3>Envíos rápidos</h3><p>Entregamos a toda Colombia en menos de 72 horas.</p></div>
+        <div class="servicio"><i class="fas fa-headset"></i><h3>Soporte 24/7</h3><p>Atención al cliente siempre disponible para ayudarte.</p></div>
+        <div class="servicio"><i class="fas fa-lock"></i><h3>Pago Seguro</h3><p>Tus datos están protegidos con nosotros.</p></div>
       </div>
     </section>
 
@@ -169,18 +120,9 @@
     <section id="testimonios" class="section">
       <h2 class="section-title">Lo que dicen nuestros clientes</h2>
       <div class="testimonios-grid">
-        <div class="testimonio">
-          <p>"La atención y la calidad son insuperables. ¡Recomiendo totalmente!"</p>
-          <h4>- Camila R.</h4>
-        </div>
-        <div class="testimonio">
-          <p>"Los teclados RGB que compré llegaron en tiempo récord."</p>
-          <h4>- Juan P.</h4>
-        </div>
-        <div class="testimonio">
-          <p>"Muy satisfecho con mi compra. Excelente experiencia de principio a fin."</p>
-          <h4>- Esteban M.</h4>
-        </div>
+        <div class="testimonio"><p>"La atención y la calidad son insuperables. ¡Recomiendo totalmente!"</p><h4>- Camila R.</h4></div>
+        <div class="testimonio"><p>"Los teclados RGB que compré llegaron en tiempo récord."</p><h4>- Juan P.</h4></div>
+        <div class="testimonio"><p>"Muy satisfecho con mi compra. Excelente experiencia de principio a fin."</p><h4>- Esteban M.</h4></div>
       </div>
     </section>
 
@@ -188,23 +130,23 @@
     <section id="contacto" class="section">
       <h2 class="section-title">Formulario de Contacto</h2>
       <form method="get" action="#">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="number" name="edad" placeholder="Edad" min="18" required>
-        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="edad" placeholder="Edad" min="18" required />
+        <input type="email" name="correo" placeholder="Correo electrónico" required />
         <select name="pais" required>
           <option value="">Selecciona tu ciudad</option>
-          <option value="medelin">medellin</option>
-          <option value="bogota">bogota</option>
-          <option value="cali">cali</option>
-          <option value="cartagena">cartagena</option>
-          <option value="quibdo">quibdo</option>
+          <option value="medelin">Medellín</option>
+          <option value="bogota">Bogotá</option>
+          <option value="cali">Cali</option>
+          <option value="cartagena">Cartagena</option>
+          <option value="quibdo">Quibdó</option>
         </select>
-        <label><input type="checkbox" name="revisar" required> Acepto los términos</label>
-        <input type="submit" value="Enviar">
+        <label><input type="checkbox" name="revisar" required /> Acepto los términos</label>
+        <input type="submit" value="Enviar" />
       </form>
     </section>
 
-    <!-- PREGUNTAS FRECUENTES -->
+    <!-- FAQ -->
     <section id="faq" class="section">
       <h2 class="section-title">Preguntas Frecuentes</h2>
       <div class="faq">
@@ -218,18 +160,22 @@
       <p>Tu pedido tiene 5 días para ser <strong>reembolsable</strong>.</p>
       <p class="resaltado">¡Gracias por confiar en nosotros!</p>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Luisito Style Zone - Tienda de tecnología</p>
-    <div class="redes-sociales">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <div class="container footer-container">
+      <p>&copy; 2025 Luisito Style Zone - Tienda de tecnología</p>
+      <div class="redes-sociales">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
     </div>
   </footer>
 
-  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <!-- WhatsApp flotante -->
   <a href="https://wa.me/573001112233" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
