@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Registro</title>
+  <link rel="stylesheet" href="registro.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2 id="form-title">Iniciar Sesión</h2>
+
+      <!-- Formulario de Login -->
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Correo electrónico" required>
+        <input type="password" id="login-password" placeholder="Contraseña" required>
+        <button type="submit" class="btn">Ingresar</button>
+        <p>¿No tienes cuenta? 
+          <a href="#" id="show-register">Crear cuenta</a>
+        </p>
+      </form>
+
+      <!-- Formulario de Registro -->
+      <form id="register-form" style="display: none;">
+        <input type="text" id="register-name" placeholder="Nombre completo" required>
+        <input type="email" id="register-email" placeholder="Correo electrónico" required>
+        <input type="password" id="register-password" placeholder="Contraseña" required>
+        <button type="submit" class="btn">Registrarse</button>
+        <p>¿Ya tienes cuenta? 
+          <a href="#" id="show-login">Inicia sesión</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Alternar entre Login y Registro
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+    const formTitle = document.getElementById("form-title");
+
+    document.getElementById("show-register").addEventListener("click", () => {
+      loginForm.style.display = "none";
+      registerForm.style.display = "block";
+      formTitle.textContent = "Crear Cuenta";
+    });
+
+    document.getElementById("show-login").addEventListener("click", () => {
+      registerForm.style.display = "none";
+      loginForm.style.display = "block";
+      formTitle.textContent = "Iniciar Sesión";
+    });
+
+    // Simular redirección al index.html después de iniciar sesión
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Inicio de sesión exitoso ✅");
+      window.location.href = "index.html";
+    });
+
+    // Simular registro
+    registerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Cuenta creada con éxito 🎉, ahora puedes iniciar sesión.");
+      registerForm.style.display = "none";
+      loginForm.style.display = "block";
+      formTitle.textContent = "Iniciar Sesión";
+    });
+  </script>
+</body>
+</html>

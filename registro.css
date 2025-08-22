@@ -1,0 +1,123 @@
+/* ======= ESTILO GENERAL ======= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:  
+        url("img/logo.png") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(12px) saturate(1.5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease;
+}
+
+/* Animación del fondo (puedes aplicarla al overlay si quieres efectos gamer) */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 350px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* ======= TITULOS ======= */
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #3a0ca3;
+    text-shadow: 0 0 5px rgba(58, 12, 163, 0.4);
+}
+
+/* ======= INPUTS ======= */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #f9f9f9;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 8px rgba(0,180,216,0.5);
+    background: #fff;
+}
+
+/* ======= BOTONES ======= */
+button {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #00b4d8, #3a0ca3);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    background: linear-gradient(135deg, #3a0ca3, #00b4d8);
+    box-shadow: 0 8px 20px rgba(58, 12, 163, 0.5);
+}
+
+/* Efecto al presionar */
+button:active {
+    transform: scale(0.97);
+}
+
+/* ======= LINKS ======= */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #3a0ca3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00b4d8;
+    text-shadow: 0 0 5px rgba(0,180,216,0.4);
+}
+
+/* ======= FORMULARIOS ======= */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+    animation: fadeIn 0.6s ease;
+}
+
+/* Animación suave al aparecer */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
